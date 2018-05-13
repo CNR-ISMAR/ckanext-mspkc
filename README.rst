@@ -36,7 +36,7 @@ The MSP Knowledge Catalogue extension provide three custom resource
 types (MSP-data, MPS-portal and MPS-tools) to collect relevant
 information in order to support Maritime Spatial Planning Activities.
 
-![Alt text](/docs/images/mspkc_home.png?raw=true "MSP Konwledge Catalogue")
+.. image:: /docs/images/mspkc_home.png?raw=true
 
 
 ------------
