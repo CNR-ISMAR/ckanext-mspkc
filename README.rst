@@ -32,17 +32,18 @@
 ckanext-mspkc
 =============
 
-.. Put a description of your extension here:
-   What does it do? What features does it have?
-   Consider including some screenshots or embedding a video!
+The MSP Knowledge Catalogue extension provide three custom resource
+types (MSP-data, MPS-portal and MPS-tools) to collect relevant
+information in order to support Maritime Spatial Planning Activities.
+
+![Alt text](/docs/images/mspkc_home.png?raw=true "MSP Konwledge Catalogue")
 
 
 ------------
 Requirements
 ------------
 
-For example, you might want to mention here which versions of CKAN this
-extension works with.
+Mspkc is base on ckanext-scheming extension.
 
 
 ------------
