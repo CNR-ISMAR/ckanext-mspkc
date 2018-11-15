@@ -1,0 +1,530 @@
+{
+  "scheming_version": 1,
+  "dataset_type": "msp-data",
+  "about_url": "http://example.com/the-camel-photos-schema",
+  "dataset_fields": [
+    {
+      "field_name": "owner_org",
+      "label": "Organization",
+      "preset": "dataset_organization",
+      "required": false
+    },
+    {
+      "field_name": "title",
+      "label": "Resource title",
+      "preset": "title",
+      "form_placeholder": "eg. Maritime transport, Coralligenous communities, Offshore sand deposits",
+      "required": true
+    },
+      {
+      "field_name": "name",
+      "label": "URL",
+      "preset": "dataset_slug",
+      "form_placeholder": "eg. my-dataset"
+    },
+    {
+      "field_name": "notes",
+      "label": "Resource abstract",
+      "form_snippet": "markdown.html",
+      "form_placeholder": "eg. Abstract about the portal",
+      "required": true
+    },
+    {
+      "field_name": "category",
+      "label": "Topic category",
+      "preset": "multiple_checkbox",
+      "required": true,
+      "help_text": "High-level dataset thematic classification to assist in the grouping and search of available datasets.",
+      "choices": [
+          {
+              "value": "maritime_boundaries",
+              "label": "Maritime boundaries"
+          },
+          {
+              "value": "terrestrial_boundaries",
+              "label": "Terrestrial boundaries            "
+          },
+          {
+              "value": "physical_characteristics",
+              "label": "Physical characteristics"
+          },
+          {
+              "value": "types_of_habitat",
+              "label": "Types of habitat"
+          },
+          {
+              "value": "biological_characteristics",
+              "label": "Biological characteristics"
+          },
+          {
+              "value": "aquaculture",
+              "label": "Aquaculture"
+          },
+          {
+              "value": "fishing",
+              "label": "Fishing"
+          },
+          {
+              "value": "renewable_energies",
+              "label": "Renewable energies"
+          },
+          {
+              "value": "installations_and_infrastructure",
+              "label": "Installations & infrastructure"
+          },
+          {
+              "value": "maritime_transport_and_traffic_flows",
+              "label": "Maritime transport and traffic flows"
+          },
+          {
+              "value": "ports",
+              "label": "Ports"
+          },
+          {
+              "value": "protected_areas",
+              "label": "Nature and species conservation sites & protected areas"
+          },
+          {
+              "value": "militray",
+              "label": "Military"
+          },
+          {
+              "value": "military",
+              "label": "Military"
+          },
+          {
+              "value": "extraction_areas",
+              "label": "Raw material extraction areas"
+          },
+          {
+              "value": "scientific_research",
+              "label": "Scientific research"
+          },
+          {
+              "value": "cables_and_pipelines",
+              "label": "Submarine cable & pipeline routes"
+          },
+          {
+              "value": "tourism",
+              "label": "Tourism & recreation"
+          },
+          {
+              "value": "cultural_heritage",
+              "label": "Underwater cultural heritage"
+          },
+          {
+              "value": "coastal_defence",
+              "label": "Coastal defence"
+          },
+          {
+              "value": "human_population",
+              "label": "Human population"
+          },
+          {
+              "value": "economic_indicators",
+              "label": "Economic indicators"
+          },
+          {
+              "value": "social_indicators",
+              "label": "Social indicators"
+          },
+          {
+              "value": "coastal_land_uses_activities",
+              "label": "Coastal land uses/activities"
+          },
+          {
+              "value": "source_of_pollution",
+              "label": "Source of pollution"
+          },
+          {
+              "value": "pressures_impacts",
+              "label": "Pressures and impacts"
+          },
+          {
+              "value": "spatial_policy",
+              "label": "Spatial policy"
+          }
+      ]
+    },
+    {
+      "field_name": "sub_category",
+      "label": "Sub category",
+      "form_snippet": "markdown.html",
+      "form_placeholder": "eg. Sub cateogry"
+    },
+    {
+      "field_name": "language",
+      "label": "Resource language",
+      "preset": "select",
+      "required": true,
+      "choices": [
+          {"label": "English", "value": "eng"},
+          {"label": "Bulgarian", "value": "bul"},
+          {"label": "Croatian", "value": "hrv"},
+          {"label": "Czech", "value": "cze"},
+          {"label": "Danish", "value": "dan"},
+          {"label": "Dutch", "value": "dut"},
+          {"label": "Estonian", "value": "est"},
+          {"label": "Finnish", "value": "fin"},
+          {"label": "French", "value": "fre"},
+          {"label": "German", "value": "ger"},
+          {"label": "Greek", "value": "gre"},
+          {"label": "Hungarian", "value": "hun"},
+          {"label": "Irish", "value": "gle"},
+          {"label": "Italian", "value": "ita"},
+          {"label": "Latvian", "value": "lav"},
+          {"label": "Lithuanian", "value": "lit"},
+          {"label": "Maltese", "value": "mlt"},
+          {"label": "Montenegro", "value": "cnr"},
+          {"label": "Polish", "value": "pol"},
+          {"label": "Portuguese", "value": "por"},
+          {"label": "Romanian", "value": "rum"},
+          {"label": "Slovak", "value": "slo"},
+          {"label": "Slovenian", "value": "slv"},
+          {"label": "Spanish", "value": "spa"},
+          {"label": "Swedish", "value": "swe"},
+          {"label": "Multiple", "value": "mul"},
+          {"label": "Unknown", "value": "unk"}
+      ]
+    },
+    {
+      "field_name": "domain_area",
+      "label": "Domain area",
+      "preset": "tag_string_autocomplete",
+      "form_placeholder": "eg. Mediterranean, Adriatic, Ionian, ",
+      "help_text": "This is a list of geographical names to identify the spatial domain / coverage of the resource."
+    },
+    {
+      "field_name": "owner",
+      "label": "Owner",
+      "preset": "tag_string_autocomplete",
+      "form_placeholder": "eg. Emodnet,  EEA",
+      "help_text": "This is a list of one or more names (e. g. Emodnet, EEA) identifying the ownership of the resource."
+    },
+    {
+      "field_name": "provider",
+      "label": "Provider",
+      "preset": "tag_string_autocomplete",
+      "form_placeholder": "eg. Emodnet, EEA",
+      "help_text": "This is a list of one or more names (e. g. Emodnet, EEA) identifying the provider of the resource. E. g. This could be the owner of the geo-portal or SDI through which the resource is available."
+    },
+    {
+      "field_name": "data_portal",
+      "label": "Data portal",
+      "preset": "tag_string_autocomplete",
+      "form_placeholder": "eg. ADRIPLAN, SHAPE, EMODNet Human activities",
+      "help_text": "List of data portals"
+    },
+    {
+      "field_name": "presentation_form",
+      "label": "Presentation form",
+      "preset": "select",
+      "choices": [
+          {
+              "value": "map",
+              "label": "Map (map represented in raster or vector form)"
+          },
+          {
+              "value": "image",
+              "label": "Image"
+          },
+          {
+              "value": "document",
+              "label": "Document"
+          },
+          {
+              "value": "table",
+              "label": "Table"
+          },
+          {
+              "value": "model",
+              "label": "Model"
+          },
+          {
+              "value": "profile",
+              "label": "Profile"
+          },
+          {
+              "value": "video",
+              "label": "Video"
+          },
+          {
+              "value": "audio",
+              "label": "Audio"
+          },
+          {
+              "value": "diagram",
+              "label": "Diagram"
+          },
+          {
+              "value": "multimedia",
+              "label": "Multimedia"
+          },
+          {
+              "value": "rawdata",
+              "label": "Raw data"
+          },
+          {
+              "value": "fixme",
+              "label": "FIXME"
+          }
+      ]
+    },
+    {
+      "field_name": "spatial_representation",
+      "label": "Spatial representation",
+      "preset": "select",
+      "choices": [
+          {
+              "value": "vector_point",
+              "label": "Vector - point"
+          },
+          {
+              "value": "vector_line",
+              "label": "Vector - line (or polyline)"
+          },
+          {
+              "value": "vector_polygon",
+              "label": "Vector - polygon"
+          },
+          {
+              "value": "vector_mixed",
+              "label": "Vector - mixed types"
+          },
+          {
+              "value": "raster",
+              "label": "Raster (grid)"
+          },
+          {
+              "value": "nogeo",
+              "label": "No geo"
+          },
+          {
+              "value": "fixme",
+              "label": "FIXME"
+          }
+      ]
+    },
+    {
+      "field_name": "crs",
+      "label": "Coordinate reference system",
+      "preset": "multiple_checkbox",
+      "choices": [
+          {"value": "4326", "label": "epsg:4326 - WGS84 (degree)"},
+          {"value": "3035", "label": "epsg:3035 - ETRS89 / LAEA Europe"},
+          {"value": "32633", "label": "epsg:32633 - WGS 84 / UTM zone 33N"},
+          {"value": "32634", "label": "epsg:32634 - WGS 84 / UTM zone 33N"},
+          {"value": "32635", "label": "epsg:32635 - WGS 84 / UTM zone 33N"},
+          {"value": "32636", "label": "epsg:32636 - WGS 84 / UTM zone 33N"},
+          {"value": "3857", "label": "epsg:3857 WGS 84 / Pseudo-Mercator"},
+          {"value": "4936", "label": "epsg:4936 ETRS89 Geocentric coordinate system"},
+          {"value": "3003", "label": "epsg:3003 Monte Mario / Italy zone 1"},
+          {"value": "3765", "label": "epsg:3765 HTRS96 / Croatia TM"},
+          {"value": "3604", "label": "epsg:3604 NAD83(NSRS2007) / Montana"},
+          {"value": "6404", "label": "epsg:6404 NAD83(2011) / Arizona Central"},
+          {"value": "32662", "label": "epsg:32662 WGS 84 / Plate Carree"},
+          {"value": "3034", "label": "epsg:3034 ETRS89 / LCC Europe"},
+          {"value": "41001", "label": "epsg:41001 WGS84 / Simple Mercator -- Spherical Mercator "},
+          {"value": "fixme", "label": "FIXME"},
+          {"value": "other", "label": "Other"}
+      ]
+    },
+    {
+      "field_name": "crs_other",
+      "label": " ",
+      "help_text": "Identifier of the coordinate reference system(s) used in the data set. Only identifiers contained in the EPSG Geodetic Parameter Dataset shall be used (e.g. 4326). Refer to the following URLs for more info and to find the proper EPSG code: https://epsg.io/ or http://spatialreference.org/.",
+      "form_placeholder": "Other epsg codes. E.g. 4326, 3035"
+    },
+    {
+      "field_name": "web_services",
+      "label": "Web services",
+      "preset": "multiple_checkbox",
+      "choices": [
+          {
+              "value": "OGC_WMS",
+              "label": "OGC-WMS"
+          },
+          {
+              "value": "OGC_WFS",
+              "label": "OGC-WFS"
+          },
+          {
+              "value": "OGC_WCS",
+              "label": "OGC-WCS"
+          },
+          {
+              "value": "OGC_SOS",
+              "label": "OGC-SOS"
+          },
+          {"value": "other", "label": "Other"}
+      ]
+    },
+    {
+      "field_name": "web_services_other",
+      "label": " ",
+      "help_text": "Available interoperable services to view or download the resource.",
+      "form_placeholder": "Other download services."
+    },
+    {
+      "field_name": "temporal_extent",
+      "label": "Temporal extent",
+      "preset": "date",
+      "help_text": "Time period covered by the content of the dataset. Use this field to specify ad individual date or to specify the START date of a time period."
+    },
+    {
+      "field_name": "temporal_extent_end",
+      "label": " ",
+      "preset": "date",
+      "help_text": "Use this field to specify the END date of a time period."
+    },
+    {
+      "field_name": "data_accessibility",
+      "label": "Data accessibility",
+      "form_snippet": "markdown.html",
+      "form_placeholder": "A description of the level of resource accessibility."
+    },
+    {
+      "field_name": "license_id",
+      "label": "License",
+      "form_snippet": "license.html",
+      "help_text": "License definitions and additional information can be found at http://opendefinition.org/"
+    },
+    {
+      "field_name": "validation_level",
+      "label": "Validation level",
+      "preset": "select",
+      "choices": [
+          {
+              "value": "draft",
+              "label": "Draft"
+          },
+          {
+              "value": "official",
+              "label": "Official data"
+          },
+          {
+              "value": "research",
+              "label": "Research"
+          },
+          {
+              "value": "business",
+              "label": "Business"
+          },
+          {
+              "value": "demo",
+              "label": "Demo"
+          },
+          {
+              "value": "vgi",
+              "label": "Volunteered geographic information"
+          }
+      ]
+    },
+    {
+      "field_name": "additional_informations",
+      "label": "Additional informations",
+      "form_snippet": "markdown.html",
+      "form_placeholder": "eg. Additional informations"
+    },
+    {
+      "field_name": "case_studies_relevance",
+      "label": "Relevance for case studies",
+      "preset": "multiple_checkbox",
+      "choices": [
+          {
+              "value": "cs1_italy",
+              "label": "CS 1 - Italy"
+          },
+          {
+              "value": "cs2_croatia",
+              "label": "CS 2 - Croatia"
+          },
+          {
+              "value": "cs3_slovenia",
+              "label": "CS 3 - Slovenia"
+          },
+          {
+              "value": "cs4_greece_ionian",
+              "label": "CS 4 - Greece Ionian"
+          },
+          {
+              "value": "cs5_greece_aegean",
+              "label": "CS 5 - Greece Aegean"
+          }
+      ]
+    },
+    {
+      "field_name": "metadata_completeness",
+      "label": "Metadata completeness",
+      "preset": "select",
+      "choices": [
+          {
+              "value": "draft",
+              "label": "Draft"
+          },
+          {
+              "value": "complete",
+              "label": "Complete"
+          },
+          {
+              "value": "deprecate",
+              "label": "Deprecate"
+          }
+      ]
+    },
+    {
+      "field_name": "autonotes",
+      "label": "Notes",
+      "form_snippet": "markdown.html",
+      "form_placeholder": "eg. Notes"
+    }
+  ],
+  "resource_fields": [
+    {
+      "field_name": "mspkc_resource_type",
+      "label": "Resource type",
+      "preset": "select",
+      "choices": [
+          {
+              "value": "Download",
+              "label": "Download"
+          },
+          {
+              "value": "MapViewer",
+              "label": "Map viewer"
+          },
+          {
+              "value": "MetadataISO-XML",
+              "label": "Metadata ISO/XML"
+          },
+          {
+              "value": "AdditionalInfo",
+              "label": "Additional info"
+          }
+      ]
+    },
+    {
+      "field_name": "url",
+      "label": "Source",
+      "preset": "resource_url_upload",
+      "form_placeholder": "http://example.com/my-camel-photo.jpg",
+      "upload_label": "Source"
+    },
+    {
+      "field_name": "name",
+      "label": "Name",
+      "form_placeholder": "eg. Metadata, Dowlonad resource"
+    },
+    {
+      "field_name": "description",
+      "label": "Description",
+      "form_snippet": "markdown.html",
+      "form_placeholder": "Some useful notes about the data"
+    },
+    {
+      "field_name": "format",
+      "label": "Format",
+      "preset": "resource_format_autocomplete"
+    }
+  ]
+}

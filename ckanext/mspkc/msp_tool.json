@@ -1,0 +1,484 @@
+{
+  "scheming_version": 1,
+  "dataset_type": "msp-tool",
+  "about_url": "http://example.com/the-camel-photos-schema",
+  "dataset_fields": [
+    {
+      "field_name": "owner_org",
+      "label": "Organization",
+      "preset": "dataset_organization",
+      "required": false
+    },
+    {
+      "field_name": "title",
+      "label": "Tool title",
+      "preset": "title",
+      "form_placeholder": "eg. Maritime transport, Coralligenous communities, Offshore sand deposits",
+      "required": true
+    },
+      {
+      "field_name": "name",
+      "label": "URL",
+      "preset": "dataset_slug",
+      "form_placeholder": "eg. my-portal"
+    },
+    {
+      "field_name": "notes",
+      "label": "Tool abstract",
+      "form_snippet": "markdown.html",
+      "form_placeholder": "eg. Abstract about the portal"
+    },
+    {
+      "field_name": "tool_category",
+      "label": "Tool category",
+      "preset": "multiple_checkbox",
+      "required": true,
+      "choices": [
+          {
+              "value": "environmental_impact_assessment",
+              "label": "Environmental impact assessment"
+          },
+          {
+              "value": "communication",
+              "label": "Communication"
+          },
+          {
+              "value": "data_gathering-management",
+              "label": "Data gathering/management"
+          },
+          {
+              "value": "economic_analysis",
+              "label": "Economic analysis"
+          },
+          {
+              "value": "evaluation",
+              "label": "Evaluation"
+          },
+          {
+              "value": "governance_assistance",
+              "label": "Governance assistance"
+          },
+          {
+              "value": "management_plan_proposal",
+              "label": "Management plan proposal"
+          },
+          {
+              "value": "scenario_creation_and_analysis",
+              "label": "Scenario creation and analysis"
+          },
+          {
+              "value": "site_identification",
+              "label": "Site identification"
+          },
+          {
+              "value": "socio-economic_analysis",
+              "label": "Socio-economic analysis"
+          },
+          {
+              "value": "uses_conflict_analysis",
+              "label": "Uses conflict analysis"
+          }
+      ]
+    },
+    {
+      "field_name": "msp_stages",
+      "label": "MSP stages",
+      "preset": "multiple_checkbox",
+      "required": true,
+      "choices": [
+          {
+              "value": "define_goals",
+              "label": "1 Define goals and objectives"
+          },
+          {
+              "value": "gather_data",
+              "label": "2 Gather data and define current conditions"
+          },
+          {
+              "value": "identify_issues",
+              "label": "3 Identify issues, constraints, and future conditions"
+          },
+          {
+              "value": "develop_actions",
+              "label": "4 Develop alternative management actions"
+          },
+          {
+              "value": "evaluate_actions",
+              "label": "5 Evaluate alternative management actions"
+          },
+          {
+              "value": "monitor_evaluate_actions",
+              "label": "6 Monitor and evaluate management actions"
+          },
+          {
+              "value": "refine goals",
+              "label": "7 Refine goals, objectives and management actions"
+          }
+      ]
+    },
+    {
+      "field_name": "msp_users",
+      "label": "MSP users",
+      "preset": "multiple_checkbox",
+      "required": true,
+      "choices": [
+          {
+              "value": "planners",
+              "label": "Planners"
+          },
+          {
+              "value": "scientists",
+              "label": "Scientists"
+          },
+          {
+              "value": "authorities",
+              "label": "Authorities"
+          },
+          {
+              "value": "general_public",
+              "label": "General public"
+          },
+          {
+              "value": "marine_users",
+              "label": "Marine users"
+          },
+          {
+              "value": "NGOs",
+              "label": "NGOs"
+          }
+      ]
+    },
+    {
+      "field_name": "tool_sw_type",
+      "label": "Type of software",
+      "preset": "multiple_checkbox",
+      "required": true,
+      "choices": [
+          {
+              "value": "desktop",
+              "label": "Desktop"
+          },
+          {
+              "value": "web-based",
+              "label": "Web-based"
+          },
+          {
+              "value": "toolbox",
+              "label": "Toolbox"
+          },
+          {
+              "value": "qgis_plugin",
+              "label": "QGIS Plugin/extension"
+          },
+          {
+              "value": "arcgis_plugin",
+              "label": "ArcGIS Plugin/extension"
+          },
+          {
+              "value": "other_plugin",
+              "label": "Plugin (Other)"
+          },
+          {
+              "value": "library",
+              "label": "Library"
+          }
+      ]
+    },
+    {
+      "field_name": "compatible_os",
+      "label": "Compatible OS",
+      "preset": "multiple_checkbox",
+      "choices": [
+          {
+              "value": "windows",
+              "label": "Windows"
+          },
+          {
+              "value": "mac",
+              "label": "Mac"
+          },
+          {
+              "value": "linux",
+              "label": "Linux"
+          }
+      ]
+    },
+    {
+      "field_name": "tool_input_data",
+      "label": "Input data",
+      "preset": "multiple_checkbox",
+      "required": true,
+      "choices": [
+          {
+              "value": "qualitative",
+              "label": "Qualitative"
+          },
+          {
+              "value": "semiquantitative",
+              "label": "Semiquantitative"
+          },
+          {
+              "value": "quantitative",
+              "label": "Quantitative"
+          },
+          {
+              "value": "spatially_explicit",
+              "label": "Spatially explicit"
+          },
+          {
+              "value": "temporally_explicit",
+              "label": "Temporally explicit"
+          }
+      ]
+    },
+    {
+      "field_name": "tool_output_data",
+      "label": "Output data",
+      "preset": "multiple_checkbox",
+      "required": true,
+      "choices": [
+          {
+              "value": "layers",
+              "label": "Layer"
+          },
+          {
+              "value": "maps",
+              "label": "Maps"
+          },
+          {
+              "value": "reports",
+              "label": "Reports"
+          },
+          {
+              "value": "tables",
+              "label": "Tables"
+          },
+          {
+              "value": "graphs",
+              "label": "Graphs"
+          }
+      ]
+    },
+    {
+      "field_name": "owner",
+      "label": "Organization",
+      "preset": "tag_string_autocomplete",
+      "form_placeholder": "eg. Emodnet,  EEA",
+      "help_text": "This is a list of one or more names (usually organizations or institutes e. g. Emodnet, EEA) identifying the main supporter of the tool development and implementation."
+    },
+    {
+      "field_name": "code_accessibility",
+      "label": "Code accessibility",
+      "form_snippet": "markdown.html",
+      "form_placeholder": "Description of the level of code accessibility."
+    },
+    {
+      "field_name": "sw_license",
+      "label": "Software license",
+      "preset": "select",
+      "choices": [
+          {
+              "value": "GPL",
+              "label": "GNU General Public License (GPL)"
+          },
+          {
+              "value": "LGPL",
+              "label": "GNU Lesser General Public License (LGPL)"
+          },
+          {
+              "value": "Affero_GPL",
+              "label": "GNU Affero General Public License"
+          },
+          {
+              "value": "Apache",
+              "label": "Apache License"
+          },
+          {
+              "value": "BSD",
+              "label": "BSD license"
+          },
+          {
+              "value": "MIT",
+              "label": "MIT license"
+          },
+          {
+              "value": "CPL",
+              "label": "Common Public License (GPL)"
+          },
+          {
+              "value": "Mozilla",
+              "label": "Mozilla Public License (MPL)"
+          },
+          {
+              "value": "EUPL",
+              "label": "European Public License (EUPL)"
+          },
+          {
+              "value": "Commercial",
+              "label": "Commercial license (with fee)"
+          },
+          {
+              "value": "Commercial",
+              "label": "Commercial license (without fee), freeware"
+          },
+          {
+              "value": "dual_license",
+              "label": "Dual-license model (open/freeware and with fee)"
+          }
+      ]
+    },
+    {
+      "field_name": "tool_documentation",
+      "label": "Documentation",
+      "preset": "multiple_checkbox",
+      "choices": [
+          {
+              "value": "unavailable",
+              "label": "Unavailable"
+          },
+          {
+              "value": "draft_user_documentation",
+              "label": "Draft user documentation"
+          },
+          {
+              "value": "full_user_documentation",
+              "label": "Full user documentation"
+          },
+          {
+              "value": "draft_developer_documentation",
+              "label": "Draft developer documentation"
+          },
+          {
+              "value": "full_developer_documentation",
+              "label": "Full developer documentation"
+          },
+          {
+              "value": "tutorials",
+              "label": "Tutorials"
+          },
+          {
+              "value": "Videos_and_presentations",
+              "label": "Videos & presentations"
+          }
+      ]
+    },
+    {
+      "field_name": "tool_community_facilities",
+      "label": "Tool community facilities",
+      "preset": "multiple_checkbox",
+      "choices": [
+          {
+              "value": "mailing_list",
+              "label": "Mailing list"
+          },
+          {
+              "value": "forum",
+              "label": "Forum/Blog"
+          },
+          {
+              "value": "chat",
+              "label": "Chat (e.g. IRC, Gitter)"
+          },
+          {
+              "value": "collaborative_development",
+              "label": "Collaborative development (e.g. Github)"
+          }
+     ]
+    },
+    {
+      "field_name": "additional_informations",
+      "label": "Additional informations",
+      "form_snippet": "markdown.html",
+      "form_placeholder": "eg. Additional informations"
+    },
+    {
+      "field_name": "case_studies_relevance",
+      "label": "Relevance for case studies",
+      "preset": "multiple_checkbox",
+      "choices": [
+          {
+              "value": "cs1_italy",
+              "label": "CS 1 - Italy"
+          },
+          {
+              "value": "cs2_croatia",
+              "label": "CS 2 - Croatia"
+          },
+          {
+              "value": "cs3_slovenia",
+              "label": "CS 3 - Slovenia"
+          },
+          {
+              "value": "cs4_greece_ionian",
+              "label": "CS 4 - Greece Ionian"
+          },
+          {
+              "value": "cs5_greece_aegean",
+              "label": "CS 5 - Greece Aegean"
+          }
+      ]
+    },
+    {
+      "field_name": "metadata_completeness",
+      "label": "Metadata completeness",
+      "preset": "select",
+      "choices": [
+          {
+              "value": "draft",
+              "label": "Draft"
+          },
+          {
+              "value": "complete",
+              "label": "Complete"
+          },
+          {
+              "value": "deprecate",
+              "label": "Deprecate"
+          }
+      ]
+    }
+  ],
+  "resource_fields": [
+    {
+      "field_name": "mspkc_resource_tool_type",
+      "label": "Resource type",
+      "preset": "select",
+      "choices": [
+          {
+              "value": "software_homepage",
+              "label": "Software homepage"
+          },
+          {
+              "value": "software_repository",
+              "label": "Software repository"
+          },
+          {
+              "value": "scientific_publication",
+              "label": "Scientific publication"
+          },
+          {
+              "value": "documentation",
+              "label": "Documentation"
+          }
+      ]
+    },
+    {
+      "field_name": "url",
+      "label": "Source",
+      "preset": "resource_url_upload",
+      "form_placeholder": "http://example.com/my-camel-photo.jpg",
+      "upload_label": "Source"
+    },
+    {
+      "field_name": "name",
+      "label": "Name",
+      "form_placeholder": "eg. Software repository, documentation"
+    },
+    {
+      "field_name": "description",
+      "label": "Description",
+      "form_snippet": "markdown.html",
+      "form_placeholder": "Some useful notes about the data"
+    }
+  ]
+}

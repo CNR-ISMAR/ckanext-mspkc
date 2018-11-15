@@ -1,0 +1,410 @@
+{
+  "scheming_version": 1,
+  "dataset_type": "msp-portal",
+  "about_url": "http://example.com/the-camel-photos-schema",
+  "dataset_fields": [
+    {
+      "field_name": "owner_org",
+      "label": "Organization",
+      "preset": "dataset_organization",
+      "required": false
+    },
+    {
+      "field_name": "title",
+      "label": "Portal title",
+      "preset": "title",
+      "form_placeholder": "eg. Maritime transport, Coralligenous communities, Offshore sand deposits",
+      "required": true
+    },
+      {
+      "field_name": "name",
+      "label": "URL",
+      "preset": "dataset_slug",
+      "form_placeholder": "eg. my-portal"
+    },
+    {
+      "field_name": "notes",
+      "label": "Portal abstract",
+      "form_snippet": "markdown.html",
+      "form_placeholder": "eg. Abstract about the portal"
+    },
+    {
+      "field_name": "portal_type",
+      "label": "Portal type",
+      "preset": "multiple_checkbox",
+      "required": false,
+      "help_text": "",
+      "choices": [
+          {
+              "value": "data_repository",
+              "label": "Data repository"
+          },
+          {
+              "value": "data_gateway",
+              "label": "Data gateway/broker            "
+          }
+     ]
+    },
+    {
+      "field_name": "category",
+      "label": "Topic category",
+      "preset": "multiple_checkbox",
+      "required": true,
+      "help_text": "High-level portal datasets thematic classification to assist in the grouping and search of available datasets.",
+      "choices": [
+          {
+              "value": "maritime_boundaries",
+              "label": "Maritime boundaries"
+          },
+          {
+              "value": "terrestrial_boundaries",
+              "label": "Terrestrial boundaries            "
+          },
+          {
+              "value": "physical_characteristics",
+              "label": "Physical characteristics"
+          },
+          {
+              "value": "types_of_habitat",
+              "label": "Types of habitat"
+          },
+          {
+              "value": "biological_characteristics",
+              "label": "Biological characteristics"
+          },
+          {
+              "value": "aquaculture",
+              "label": "Aquaculture"
+          },
+          {
+              "value": "fishing",
+              "label": "Fishing"
+          },
+          {
+              "value": "renewable_energies",
+              "label": "Renewable energies"
+          },
+          {
+              "value": "installations_and_infrastructure",
+              "label": "Installations & infrastructure"
+          },
+          {
+              "value": "maritime_transport_and_traffic_flows",
+              "label": "Maritime transport and traffic flows"
+          },
+          {
+              "value": "ports",
+              "label": "Ports"
+          },
+          {
+              "value": "protected_areas",
+              "label": "Nature and species conservation sites & protected areas"
+          },
+          {
+              "value": "militray",
+              "label": "Military"
+          },
+          {
+              "value": "extraction_areas",
+              "label": "Raw material extraction areas"
+          },
+          {
+              "value": "scientific_research",
+              "label": "Scientific research"
+          },
+          {
+              "value": "cables_and_pipelines",
+              "label": "Submarine cable & pipeline routes"
+          },
+          {
+              "value": "tourism",
+              "label": "Tourism & recreation"
+          },
+          {
+              "value": "cultural_heritage",
+              "label": "Underwater cultural heritage"
+          },
+          {
+              "value": "coastal_defence",
+              "label": "Coastal defence"
+          },
+          {
+              "value": "human_population",
+              "label": "Human population"
+          },
+          {
+              "value": "economic_indicators",
+              "label": "Economic indicators"
+          },
+          {
+              "value": "social_indicators",
+              "label": "Social indicators"
+          },
+          {
+              "value": "coastal_land_uses_activities",
+              "label": "Coastal land uses/activities"
+          },
+          {
+              "value": "source_of_pollution",
+              "label": "Source of pollution"
+          }
+      ]
+    },
+    {
+      "field_name": "domain_area",
+      "label": "Domain area",
+      "preset": "tag_string_autocomplete",
+      "form_placeholder": "eg. Mediterranean, Adriatic, Ionian, ",
+      "help_text": "This is a list of geographical names to identify the spatial domain / coverage of the resource."
+    },
+    {
+      "field_name": "owner",
+      "label": "Owner",
+      "preset": "tag_string_autocomplete",
+      "form_placeholder": "eg. Emodnet,  EEA",
+      "help_text": "This is a list of one or more names (usually organizations or institutes like Emodnet, EEA) identifying the owner of the portal."
+    },
+    {
+      "field_name": "presentation_form",
+      "label": "Presentation form",
+      "preset": "multiple_checkbox",
+      "choices": [
+          {
+              "value": "map",
+              "label": "Map (map represented in raster or vector form)"
+          },
+          {
+              "value": "image",
+              "label": "Image"
+          },
+          {
+              "value": "document",
+              "label": "Document"
+          },
+          {
+              "value": "table",
+              "label": "Table"
+          },
+          {
+              "value": "model",
+              "label": "Model"
+          },
+          {
+              "value": "profile",
+              "label": "Profile"
+          },
+          {
+              "value": "video",
+              "label": "Video"
+          },
+          {
+              "value": "audio",
+              "label": "Audio"
+          },
+          {
+              "value": "diagram",
+              "label": "Diagram"
+          },
+          {
+              "value": "multimedia",
+              "label": "Multimedia"
+          },
+          {
+              "value": "rawdata",
+              "label": "Raw data"
+          }
+      ]
+    },
+    {
+      "field_name": "spatial_representation",
+      "label": "Spatial representation",
+      "preset": "multiple_checkbox",
+      "choices": [
+          {
+              "value": "vector_point",
+              "label": "Vector - point"
+          },
+          {
+              "value": "vector_line",
+              "label": "Vector - line (or polyline)"
+          },
+          {
+              "value": "vector_polygon",
+              "label": "Vector - polygon"
+          },
+          {
+              "value": "vector_mixed",
+              "label": "Vector - mixed types"
+          },
+          {
+              "value": "raster",
+              "label": "Raster (grid)"
+          },
+          {
+              "value": "nogeo",
+              "label": "No geo"
+          }
+      ]
+    },
+    {
+      "field_name": "web_services",
+      "label": "Web services",
+      "preset": "multiple_checkbox",
+      "choices": [
+          {
+              "value": "OGC_WMS",
+              "label": "OGC-WMS"
+          },
+          {
+              "value": "OGC_WFS",
+              "label": "OGC-WFS"
+          },
+          {
+              "value": "OGC_WCS",
+              "label": "OGC-WCS"
+          },
+          {
+              "value": "OGC_SOS",
+              "label": "OGC-SOS"
+          },
+          {
+              "value": "OGC_CSW",
+              "label": "OGC-CSW"
+          },
+          {
+              "value": "OGC_WPS",
+              "label": "OGC-WPS"
+          },
+          {"value": "other", "label": "Other"}
+      ]
+    },
+    {
+      "field_name": "web_services_other",
+      "label": " ",
+      "help_text": "Interoperable services implemented by the portal."
+    },
+    {
+      "field_name": "portal_accessibility",
+      "label": "Portal accessibility",
+      "form_snippet": "markdown.html",
+      "form_placeholder": "eg. Some useful notes about the data"
+    },
+    {
+      "field_name": "data_accessibility",
+      "label": "Data accessibility",
+      "form_snippet": "markdown.html",
+      "form_placeholder": "eg. Some useful notes about the data"
+    },
+    {
+      "field_name": "license_id",
+      "label": "Data license",
+      "form_snippet": "license.html",
+      "help_text": "License definitions and additional information can be found at http://opendefinition.org/"
+    },
+    {
+      "field_name": "portal_features",
+      "label": "Features",
+      "preset": "multiple_checkbox",
+      "choices": [
+          {
+              "value": "catalogue",
+              "label": "Catalogue"
+          },
+          {
+              "value": "view",
+              "label": "View services"
+          },
+          {
+              "value": "download",
+              "label": "Download"
+          },
+          {
+              "value": "processing",
+              "label": "Processing"
+          },
+          {
+              "value": "mapping",
+              "label": "Mapping"
+          },
+          {
+              "value": "msp_tools",
+              "label": "MSP Tools"
+          },
+          {
+              "value": "virtual_research_environment",
+              "label": "Virtual research environment"
+          },
+          {
+              "value": "user_collaboration",
+              "label": "User collaboration (Feedbacks, VGI)"
+          }
+      ]
+    },
+    {
+      "field_name": "additional_informations",
+      "label": "Additional informations",
+      "form_snippet": "markdown.html",
+      "form_placeholder": "eg. Additional informations"
+    },
+    {
+      "field_name": "case_studies_relevance",
+      "label": "Relevance for case studies",
+      "preset": "multiple_checkbox",
+      "choices": [
+          {
+              "value": "cs1_italy",
+              "label": "CS 1 - Italy"
+          },
+          {
+              "value": "cs2_croatia",
+              "label": "CS 2 - Croatia"
+          },
+          {
+              "value": "cs3_slovenia",
+              "label": "CS 3 - Slovenia"
+          },
+          {
+              "value": "cs4_greece_ionian",
+              "label": "CS 4 - Greece Ionian"
+          },
+          {
+              "value": "cs5_greece_aegean",
+              "label": "CS 5 - Greece Aegean"
+          }
+      ]
+    },
+    {
+      "field_name": "metadata_completeness",
+      "label": "Metadata completeness",
+      "preset": "select",
+      "choices": [
+          {
+              "value": "draft",
+              "label": "Draft"
+          },
+          {
+              "value": "complete",
+              "label": "Complete"
+          },
+          {
+              "value": "deprecate",
+              "label": "Deprecate"
+          }
+      ]
+    }
+  ],
+  "resource_fields": [
+    {
+      "field_name": "url",
+      "label": "Source",
+      "preset": "resource_url_upload",
+      "form_placeholder": "http://example.com/my-camel-photo.jpg",
+      "upload_label": "Source"
+    },
+    {
+      "field_name": "name",
+      "label": "Name",
+      "form_placeholder": "eg. Portal title, Home page"
+    }
+  ]
+}
