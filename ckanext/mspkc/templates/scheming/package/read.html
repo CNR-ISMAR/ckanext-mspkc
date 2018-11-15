@@ -1,0 +1,66 @@
+{#
+Display of the package type.
+Combine the scheming/package/read.html from scheming package and the block package_description from the default package/read.html
+
+#}
+
+{% extends "package/read.html" %}
+
+{%- set schema = h.scheming_get_dataset_schema(dataset_type) -%}
+
+{% block package_description %}
+  <span class="dataset-private label label-info">
+    {% if pkg.type=='msp-tool' %}
+      <i class="icon-wrench"></i>
+    {% endif %}
+    {% if pkg.type=='msp-data' %}
+      <i class="icon-tasks"></i>
+    {% endif %}
+    {% if pkg.type=='msp-portal' %}
+      <i class="icon-globe"></i>
+    {% endif %}
+    {{ pkg.type }}
+  </span>
+  {% if pkg.private %}
+    <span class="dataset-private label label-inverse pull-right">
+      <i class="icon-lock"></i>
+      {{ _('Private') }}
+    </span>
+  {% endif %}
+  <h1>
+    {% block page_heading %}
+      {{ h.dataset_display_name(pkg) }}
+      {% if pkg.state.startswith('draft') %}
+        [{{ _('Draft') }}]
+      {% endif %}
+      {% if pkg.state == 'deleted' %}
+        [{{ _('Deleted') }}]
+      {% endif %}
+    {% endblock %}
+  </h1>
+  {% block package_notes %}
+    {%- if not dataset_type -%}
+      <p>
+      dataset_type not passed to template. your version of CKAN
+      might not be compatible with ckanext-scheming
+      </p>
+    {%- endif -%}
+    {# the notes are create by featuredviews plugin
+    {% if h.scheming_field_by_name(schema.dataset_fields, 'notes') and
+      pkg.notes%}
+      <div class="notes embedded-content">
+        {{ h.render_markdown(pkg.notes) }}
+      </div>
+    {% endif %}
+    #}
+    {{ super() }}
+  {% endblock %}
+  {# FIXME why is this here? seems wrong #}
+  <span class="insert-comment-thread"></span>
+{% endblock %}
+
+
+{% block package_additional_info %}
+  {% snippet "scheming/package/snippets/additional_info.html",
+    pkg_dict=pkg, dataset_type=dataset_type, schema=schema %}
+{% endblock %}
