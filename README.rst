@@ -2,31 +2,32 @@
    these badges work. The necessary Travis and Coverage config files have been
    generated for you.
 
-.. image:: https://travis-ci.org/menegon/ckanext-mspkc.svg?branch=master
-    :target: https://travis-ci.org/menegon/ckanext-mspkc
+..
+   .. image:: https://travis-ci.org/menegon/ckanext-mspkc.svg?branch=master
+       :target: https://travis-ci.org/menegon/ckanext-mspkc
 
-.. image:: https://coveralls.io/repos/menegon/ckanext-mspkc/badge.svg
-  :target: https://coveralls.io/r/menegon/ckanext-mspkc
+   .. image:: https://coveralls.io/repos/menegon/ckanext-mspkc/badge.svg
+     :target: https://coveralls.io/r/menegon/ckanext-mspkc
 
-.. image:: https://pypip.in/download/ckanext-mspkc/badge.svg
-    :target: https://pypi.python.org/pypi//ckanext-mspkc/
-    :alt: Downloads
+   .. image:: https://pypip.in/download/ckanext-mspkc/badge.svg
+       :target: https://pypi.python.org/pypi//ckanext-mspkc/
+       :alt: Downloads
 
-.. image:: https://pypip.in/version/ckanext-mspkc/badge.svg
-    :target: https://pypi.python.org/pypi/ckanext-mspkc/
-    :alt: Latest Version
+   .. image:: https://pypip.in/version/ckanext-mspkc/badge.svg
+       :target: https://pypi.python.org/pypi/ckanext-mspkc/
+       :alt: Latest Version
 
-.. image:: https://pypip.in/py_versions/ckanext-mspkc/badge.svg
-    :target: https://pypi.python.org/pypi/ckanext-mspkc/
-    :alt: Supported Python versions
+   .. image:: https://pypip.in/py_versions/ckanext-mspkc/badge.svg
+       :target: https://pypi.python.org/pypi/ckanext-mspkc/
+       :alt: Supported Python versions
 
-.. image:: https://pypip.in/status/ckanext-mspkc/badge.svg
-    :target: https://pypi.python.org/pypi/ckanext-mspkc/
-    :alt: Development Status
+   .. image:: https://pypip.in/status/ckanext-mspkc/badge.svg
+       :target: https://pypi.python.org/pypi/ckanext-mspkc/
+       :alt: Development Status
 
-.. image:: https://pypip.in/license/ckanext-mspkc/badge.svg
-    :target: https://pypi.python.org/pypi/ckanext-mspkc/
-    :alt: License
+   .. image:: https://pypip.in/license/ckanext-mspkc/badge.svg
+       :target: https://pypi.python.org/pypi/ckanext-mspkc/
+       :alt: License
 
 =============
 ckanext-mspkc
