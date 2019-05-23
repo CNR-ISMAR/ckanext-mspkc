@@ -8,6 +8,7 @@
       "label": "Organization",
       "preset": "dataset_organization",
       "required": false
+      "help_text": "Leave this field as it is",
     },
     {
       "field_name": "title",
@@ -15,6 +16,7 @@
       "preset": "title",
       "form_placeholder": "eg. Maritime transport, Coralligenous communities, Offshore sand deposits",
       "required": true
+      "help_text": "Use a title that clearly identifies the geospatial resource. If the resource is already published elsewhere, please use the original title (translated in English).",
     },
       {
       "field_name": "name",
@@ -26,6 +28,7 @@
       "field_name": "pdm_partner",
       "label": "Partner",
       "preset": "select",
+      "help_text": "Please, do not change this value",
       "choices": [
           {
               "value": "LP",
@@ -79,6 +82,7 @@
       "form_snippet": "markdown.html",
       "form_placeholder": "eg. Abstract about the portal",
       "required": true
+      "help_text": "Describe in a few sentences the content and the purpose of the resource.",
     },
     {
       "field_name": "category",
@@ -198,12 +202,14 @@
       "label": "Sub category",
       "form_snippet": "markdown.html",
       "form_placeholder": "eg. Sub cateogry"
+      "help_text": "Please select a value from the following list in accordance with the selected Topic category:  https://docs.google.com/spreadsheets/d/1MiIwjzaIvCBOes1zLy2kiWTy1l4g4jKGetiomdqFSaY/edit?usp=sharing",
     },
     {
       "field_name": "language",
       "label": "Resource language",
       "preset": "select",
       "required": true,
+      "help_text": "Language of the datasets attributes.",
       "choices": [
           {"label": "English", "value": "eng"},
           {"label": "Bulgarian", "value": "bul"},
@@ -239,7 +245,7 @@
       "label": "Domain area",
       "preset": "tag_string_autocomplete",
       "form_placeholder": "eg. Mediterranean, Adriatic, Ionian, ",
-      "help_text": "This is a list of geographical names to identify the spatial domain / coverage of the resource."
+      "help_text": "Please select a value from this list: https://docs.google.com/spreadsheets/d/1ydnfHW-nyOwnlKE4MS1x2g_H_X20jFj1sjBpPgZgqGI/edit?usp=sharing"
     },
     {
       "field_name": "owner",
@@ -260,11 +266,12 @@
       "label": "Data portal",
       "preset": "tag_string_autocomplete",
       "form_placeholder": "eg. ADRIPLAN, SHAPE, EMODNet Human activities",
-      "help_text": "List of data portals"
+      "help_text": "Portal where the dataset is published/downloadable/etc. (if any)."
     },
     {
       "field_name": "presentation_form",
       "label": "Presentation form",
+      "help_text": "Select always  'map', unless you are referring to a non-spatial data. Please be aware that non-spatial data must be avoided and used only to report a priority spatial datasets not yet available"
       "preset": "select",
       "choices": [
           {
@@ -433,6 +440,7 @@
     {
       "field_name": "license_id",
       "label": "License",
+      "help_text": "Indicate the data accessibility: visible, downloadable, sent on request, not accessible, etc. Please add information useful to explain limitations and restrictions to access or use.",
       "form_snippet": "license.html",
       "help_text": "License definitions and additional information can be found at http://opendefinition.org/"
     },
@@ -469,7 +477,7 @@
     },
     {
       "field_name": "additional_informations",
-      "label": "Additional informations",
+      "label": "Additional information",
       "form_snippet": "markdown.html",
       "form_placeholder": "eg. Additional informations"
     },
@@ -551,10 +559,6 @@
           {
               "value": "complete",
               "label": "Complete"
-          },
-          {
-              "value": "deprecate",
-              "label": "Deprecate"
           }
       ]
     },
@@ -570,7 +574,7 @@
       "field_name": "mspkc_resource_type",
       "label": "Resource type",
       "preset": "select",
-      "help_text": "It's mandatory to provide a 'Web service' or a 'Geospatial dataset' resource.",
+      "help_text": "It's mandatory to provide a 'Geospatial dataset' resource.",
       "choices": [
           {
               "value": "WebService",
@@ -621,6 +625,7 @@
     {
       "field_name": "description",
       "label": "Description",
+      "help_text": "Brief description of all relevant attribute fields",
       "form_snippet": "markdown.html",
       "form_placeholder": "Some useful notes about the data"
     },
@@ -628,6 +633,7 @@
       "field_name": "format",
       "label": "Format",
       "preset": "resource_format_autocomplete"
+      "help_text": "SHP or GeoTIFF",
     }
   ]
 }
