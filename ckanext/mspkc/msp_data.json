@@ -7,16 +7,16 @@
       "field_name": "owner_org",
       "label": "Organization",
       "preset": "dataset_organization",
-      "required": false
-      "help_text": "Leave this field as it is",
+      "required": false,
+      "help_text": "Leave this field as it is"
     },
     {
       "field_name": "title",
       "label": "Resource title",
       "preset": "title",
       "form_placeholder": "eg. Maritime transport, Coralligenous communities, Offshore sand deposits",
-      "required": true
-      "help_text": "Use a title that clearly identifies the geospatial resource. If the resource is already published elsewhere, please use the original title (translated in English).",
+      "required": true,
+      "help_text": "Use a title that clearly identifies the geospatial resource. If the resource is already published elsewhere, please use the original title (translated in English)."
     },
       {
       "field_name": "name",
@@ -81,8 +81,8 @@
       "label": "Resource abstract",
       "form_snippet": "markdown.html",
       "form_placeholder": "eg. Abstract about the portal",
-      "required": true
-      "help_text": "Describe in a few sentences the content and the purpose of the resource.",
+      "required": true,
+      "help_text": "Describe in a few sentences the content and the purpose of the resource."
     },
     {
       "field_name": "category",
@@ -201,8 +201,8 @@
       "field_name": "sub_category",
       "label": "Sub category",
       "form_snippet": "markdown.html",
-      "form_placeholder": "eg. Sub cateogry"
-      "help_text": "Please select a value from the following list in accordance with the selected Topic category:  https://docs.google.com/spreadsheets/d/1MiIwjzaIvCBOes1zLy2kiWTy1l4g4jKGetiomdqFSaY/edit?usp=sharing",
+      "form_placeholder": "eg. Sub cateogry",
+      "help_text": "Please select a value from the following list in accordance with the selected Topic category:  https://docs.google.com/spreadsheets/d/1MiIwjzaIvCBOes1zLy2kiWTy1l4g4jKGetiomdqFSaY/edit?usp=sharing"
     },
     {
       "field_name": "language",
@@ -271,7 +271,7 @@
     {
       "field_name": "presentation_form",
       "label": "Presentation form",
-      "help_text": "Select always  'map', unless you are referring to a non-spatial data. Please be aware that non-spatial data must be avoided and used only to report a priority spatial datasets not yet available"
+      "help_text": "Select always  'map', unless you are referring to a non-spatial data. Please be aware that non-spatial data must be avoided and used only to report a priority spatial datasets not yet available",
       "preset": "select",
       "choices": [
           {
@@ -435,12 +435,12 @@
       "field_name": "data_accessibility",
       "label": "Data accessibility",
       "form_snippet": "markdown.html",
-      "form_placeholder": "A description of the level of resource accessibility."
+      "form_placeholder": "A description of the level of resource accessibility.",
+      "help_text": "Indicate the data accessibility: visible, downloadable, sent on request, not accessible, etc. Please add information useful to explain limitations and restrictions to access or use."
     },
     {
       "field_name": "license_id",
       "label": "License",
-      "help_text": "Indicate the data accessibility: visible, downloadable, sent on request, not accessible, etc. Please add information useful to explain limitations and restrictions to access or use.",
       "form_snippet": "license.html",
       "help_text": "License definitions and additional information can be found at http://opendefinition.org/"
     },
@@ -632,8 +632,8 @@
     {
       "field_name": "format",
       "label": "Format",
-      "preset": "resource_format_autocomplete"
-      "help_text": "SHP or GeoTIFF",
+      "preset": "resource_format_autocomplete",
+      "help_text": "SHP or GeoTIFF"
     }
   ]
 }
