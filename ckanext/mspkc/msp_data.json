@@ -23,6 +23,57 @@
       "form_placeholder": "eg. my-dataset"
     },
     {
+      "field_name": "pdm_partner",
+      "label": "Partner",
+      "preset": "select",
+      "choices": [
+          {
+              "value": "LP",
+              "label": "LP"
+          },
+          {
+              "value": "PP2",
+              "label": "PP2"
+          },
+          {
+              "value": "PP3",
+              "label": "PP3"
+          },
+          {
+              "value": "PP4",
+              "label": "PP4"
+          },
+          {
+              "value": "PP5",
+              "label": "PP5"
+          },
+          {
+              "value": "PP6",
+              "label": "PP6"
+          },
+          {
+              "value": "PP7",
+              "label": "PP7"
+          },
+          {
+              "value": "PP8",
+              "label": "PP8"
+          },
+          {
+              "value": "PP9",
+              "label": "PP9"
+          },
+          {
+              "value": "PP10",
+              "label": "PP10"
+          },
+          {
+              "value": "PP11",
+              "label": "PP11"
+          }
+      ]
+    },
+    {
       "field_name": "notes",
       "label": "Resource abstract",
       "form_snippet": "markdown.html",
@@ -83,10 +134,6 @@
           {
               "value": "protected_areas",
               "label": "Nature and species conservation sites & protected areas"
-          },
-          {
-              "value": "militray",
-              "label": "Military"
           },
           {
               "value": "military",
@@ -427,29 +474,68 @@
       "form_placeholder": "eg. Additional informations"
     },
     {
-      "field_name": "case_studies_relevance",
-      "label": "Relevance for case studies",
+      "field_name": "pdm_testing_relevance",
+      "label": "Relevance for testing",
       "preset": "multiple_checkbox",
       "choices": [
           {
-              "value": "cs1_italy",
-              "label": "CS 1 - Italy"
+              "value": "T2.2-ZPUIZ",
+              "label": "T2.2-ZPUIZ"
           },
           {
-              "value": "cs2_croatia",
-              "label": "CS 2 - Croatia"
+              "value": "T2.3-RER",
+              "label": "T2.3-RER"
           },
           {
-              "value": "cs3_slovenia",
-              "label": "CS 3 - Slovenia"
+              "value": "T2.4-W-GR",
+              "label": "T2.4-W-GR"
           },
           {
-              "value": "cs4_greece_ionian",
-              "label": "CS 4 - Greece Ionian"
+              "value": "T2.5-Abruzzo",
+              "label": "T2.5-Abruzzo"
           },
           {
-              "value": "cs5_greece_aegean",
-              "label": "CS 5 - Greece Aegean"
+              "value": "T2.6-SL",
+              "label": "T2.6-SL"
+          },
+          {
+              "value": "T2.7-Apulia",
+              "label": "T2.7-Apulia"
+          }
+      ]
+    },
+    {
+      "field_name": "pdm_modules_relevance",
+      "label": "Relevance for modules",
+      "preset": "multiple_checkbox",
+      "choices": [
+          {
+              "value": "T1.6-MUSC",
+              "label": "T1.6-MUSC"
+          },
+          {
+              "value": "T1.7-CEA",
+              "label": "T1.7-CEA"
+          },
+          {
+              "value": "T1.8-AZA",
+              "label": "T1.8-AZA"
+          },
+          {
+              "value": "T1.9-PAD",
+              "label": "T1.9-PAD"
+          },
+          {
+              "value": "T1.10-Oil_Spill",
+              "label": "T1.10-Oil Spill"
+          },
+          {
+              "value": "T1.11-SSF",
+              "label": "T1.11-SSF"
+          },
+          {
+              "value": "T1.12-MSF",
+              "label": "T1.12-MSF"
           }
       ]
     },
@@ -484,22 +570,39 @@
       "field_name": "mspkc_resource_type",
       "label": "Resource type",
       "preset": "select",
+      "help_text": "It's mandatory to provide a 'Web service' or a 'Geospatial dataset' resource.",
       "choices": [
           {
-              "value": "Download",
-              "label": "Download"
+              "value": "WebService",
+              "label": "Web service"
+          },
+          {
+              "value": "GeospatialDataset",
+              "label": "Geospatial dataset"
           },
           {
               "value": "MapViewer",
               "label": "Map viewer"
           },
           {
-              "value": "MetadataISO-XML",
-              "label": "Metadata ISO/XML"
+              "value": "WebPage",
+              "label": "Web page"
           },
           {
-              "value": "AdditionalInfo",
-              "label": "Additional info"
+              "value": "Document",
+              "label": "Document"
+          },
+          {
+              "value": "Metadata",
+              "label": "Metadata"
+          },
+          {
+              "value": "Other",
+              "label": "Other"
+          },
+          {
+              "value": "OtherAddInfo",
+              "label": "Other - AddInfo"
           }
       ]
     },
@@ -513,7 +616,7 @@
     {
       "field_name": "name",
       "label": "Name",
-      "form_placeholder": "eg. Metadata, Dowlonad resource"
+      "form_placeholder": "A descriptive short name for the resource"
     },
     {
       "field_name": "description",
